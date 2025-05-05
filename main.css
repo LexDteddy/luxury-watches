@@ -414,6 +414,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--background-dark);
     }
 
     .navbar .container {
@@ -427,6 +432,11 @@ h1, h2, h3, h4, h5, h6 {
         gap: 1rem;
         margin-top: 1rem;
         width: 100%;
+        display: none; /* Initially hidden */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when active */
     }
 
     .nav-brand {
@@ -438,6 +448,25 @@ h1, h2, h3, h4, h5, h6 {
     .logo {
         height: 40px;
         width: 60px;
+    }
+
+    /* Add hamburger menu button */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    /* Add padding to body when menu is open to prevent content from being hidden */
+    body.menu-open {
+        padding-top: 200px; /* Adjust this value based on your menu height */
     }
 
     /* Hero Section Mobile */
