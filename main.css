@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: var(--color-white);
+    color: var(--text-color);
     position: relative;
 }
 
@@ -282,12 +282,21 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    background: var(--background-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
 }
 
 .product-card img {
     width: 100%;
-    height: auto;
-    transition: var(--transition);
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .product-card:hover img {
@@ -295,13 +304,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 2rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-    color: var(--text-color);
+    text-align: center;
+}
+
+.product-info h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.product-info p {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
 }
 
 /* Collection Section */
@@ -602,6 +618,10 @@ h1, h2, h3, h4, h5, h6 {
     .order-summary {
         position: static;
         margin-top: 2rem;
+    }
+
+    .product-card img {
+        height: 300px;
     }
 }
 
