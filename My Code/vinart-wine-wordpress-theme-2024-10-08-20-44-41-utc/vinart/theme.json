@@ -1,0 +1,186 @@
+{
+	"version": "2",
+	"patterns": [
+		"footer-contact"
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "var(--vinart-primary-color)",
+					"slug": "primary-color",
+					"name": "Primary color"
+				},
+				{
+					"color": "var(--vinart-secondary-color)",
+					"slug": "secondary-color",
+					"name": "Secondary color"
+				},
+				{
+					"color": "var(--vinart-accent-color)",
+					"slug": "accent-color",
+					"name": "Accent color"
+				},
+				{
+					"color": "var(--vinart-accent-color-1)",
+					"slug": "accent-color-earth",
+					"name": "Accent color earth"
+				},
+				{
+					"color": "var(--vinart-accent-color-2)",
+					"slug": "accent-color-dune",
+					"name": "Accent color dune"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1000px"
+		},
+		"spacing": {
+			"blockGap": null,
+			"margin": true,
+			"padding": true,
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			]
+		},
+		"typography": {
+			"customFontSize": true,
+			"dropCap": false,
+			"fontSizes": [
+				{
+					"name": "Normal",
+					"size": "var(--vinart-body-typography-font-size)",
+					"slug": "normal"
+				}
+			],
+			"fontStyle": true,
+			"fontWeight": true,
+			"letterSpacing": true,
+			"lineHeight": true,
+			"textDecoration": true,
+			"textTransform": true
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#ffffff",
+			"text": "var(--vinart-body-typography-color)"
+		},
+		"typography": {
+			"fontFamily": "var(--vinart-body-typography-font-family)",
+			"fontSize": "var(--vinart-body-typography-font-size)",
+			"fontStyle": "normal",
+			"fontWeight": "var(--vinart-body-typography-font-weight)",
+			"letterSpacing": "var(--vinart-body-typography-letter-spacing)",
+			"lineHeight": "var(--vinart-body-typography-line-height)",
+			"textDecoration": "none",
+			"textTransform": "var(--vinart-body-typography-text-transform)"
+		},
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "0",
+					"width": "1px",
+					"color": "var(--vinart-primary-color)"
+				},
+				"color": {
+					"background": "var(--vinart-primary-color)",
+					"text": "#fff"
+				}
+			},
+			"core/paragraph": {
+                "spacing": {
+                    "margin": {
+                        "top": "0px",
+                        "bottom": "var(--vinart-paragraph-spacing)"
+                    }
+                }
+            },
+            "core/heading": {
+                "spacing": {
+                    "margin": {
+                        "top": "0px",
+                        "bottom": "20px"
+                    }
+                }
+            }
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--vinart-h1-typography-font-family)",
+					"lineHeight": "var(--vinart-h1-typography-line-height)",
+					"fontWeight": "var(--vinart-h1-typography-font-weight)",
+					"fontSize": "var(--vinart-h1-typography-font-size)",
+					"textTransform": "var(--vinart-h1-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h1-typography-letter-spacing)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--vinart-h2-typography-font-family)",
+					"lineHeight": "var(--vinart-h2-typography-line-height)",
+					"fontWeight": "var(--vinart-h2-typography-font-weight)",
+					"fontSize": "var(--vinart-h2-typography-font-size)",
+					"textTransform": "var(--vinart-h2-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h2-typography-letter-spacing)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--vinart-h3-typography-font-family)",
+					"lineHeight": "var(--vinart-h3-typography-line-height)",
+					"fontWeight": "var(--vinart-h3-typography-font-weight)",
+					"fontSize": "var(--vinart-h3-typography-font-size)",
+					"textTransform": "var(--vinart-h3-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h3-typography-letter-spacing)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--vinart-h4-typography-font-family)",
+					"lineHeight": "var(--vinart-h4-typography-line-height)",
+					"fontWeight": "var(--vinart-h4-typography-font-weight)",
+					"fontSize": "var(--vinart-h4-typography-font-size)",
+					"textTransform": "var(--vinart-h4-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h4-typography-letter-spacing)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--vinart-h5-typography-font-family)",
+					"lineHeight": "var(--vinart-h5-typography-line-height)",
+					"fontWeight": "var(--vinart-h5-typography-font-weight)",
+					"fontSize": "var(--vinart-h5-typography-font-size)",
+					"textTransform": "var(--vinart-h5-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h5-typography-letter-spacing)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--vinart-h6-typography-font-family)",
+					"lineHeight": "var(--vinart-h6-typography-line-height)",
+					"fontWeight": "var(--vinart-h6-typography-font-weight)",
+					"fontSize": "var(--vinart-h6-typography-font-size)",
+					"textTransform": "var(--vinart-h6-typography-text-transform)",
+					"letterSpacing": "var(--vinart-h6-typography-letter-spacing)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--vinart-primary-color)"
+				}
+			}
+		}
+	},
+	"customTemplates": [],
+	"templateParts": []
+}

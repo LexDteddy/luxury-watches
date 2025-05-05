@@ -1,0 +1,123 @@
+/* RTL adjustments */
+
+/* General */
+body {
+  direction: rtl;
+}
+
+/* Navigation */
+.menu li {
+  float: right;
+}
+
+.menu a {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+.menu-trigger .menu-trigger-icon,
+.menu-trigger .menu-trigger-icon:before,
+.menu-trigger .menu-trigger-icon:after {
+  float: left;
+}
+
+.menu-trigger .menu-trigger-icon:before {
+  right: 6px;
+  left: auto;
+}
+
+.menu-trigger .menu-trigger-icon:after {
+  right: 12px;
+  left: auto;
+}
+
+/* Mobile menu */
+.mobile-menu a {
+  padding-right: 1rem;
+  padding-left: 0;
+}
+
+/* Clearfix */
+.clear::before,
+.clear::after,
+.entry-content::before,
+.entry-content::after,
+.comment-content::before,
+.comment-content::after,
+.site-header::before,
+.site-header::after,
+.site-subheader::before,
+.site-subheader::after,
+.site-content::before,
+.site-content::after,
+.site-footer::before,
+.site-footer::after,
+.page-meta::before,
+.page-meta::after {
+  content: '';
+  display: table;
+}
+
+.clear::after,
+.entry-content::after,
+.comment-content::after,
+.site-header::after,
+.site-subheader::after,
+.site-content::after,
+.site-footer::after,
+.page-meta::after {
+  clear: both;
+}
+
+/* Navigation */
+.nav-links .nav-previous {
+  float: right;
+  text-align: right;
+}
+
+.nav-links .nav-next {
+  float: left;
+  text-align: left;
+}
+
+/* Pagination */
+.pagination-wrapper .nav-previous a {
+  float: right;
+  text-align: right;
+}
+
+.pagination-wrapper .nav-next a {
+  float: left;
+  text-align: left;
+}
+
+/* Widgets */
+.widget ul li {
+  text-align: right;
+}
+
+.widget ul li a {
+  padding-right: 1rem;
+}
+
+/* Comments */
+.comment-content {
+  text-align: right;
+}
+
+.comment-author {
+  float: right;
+}
+
+.comment-meta {
+  float: left;
+}
+
+/* Footer */
+.site-footer .footer-widgets .widget {
+  text-align: right;
+}
+
+.site-footer .footer-widgets .widget a {
+  padding-right: 1rem;
+}

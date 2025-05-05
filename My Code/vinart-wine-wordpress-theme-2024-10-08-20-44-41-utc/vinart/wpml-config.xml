@@ -1,0 +1,18 @@
+<wpml-config>
+    <theme>
+        <name>Vinart</name>
+        <domain>vinart</domain>
+    </theme>
+
+    <options>
+        <option translate="1">vinart_options_header_menu_open_text</option>
+        <option translate="1">vinart_options_header_menu_close_text</option>
+        <option translate="1">vinart_options_copyright_text</option>
+        <option translate="1">vinart_options_archive_read_more_button_text</option>
+        <option translate="1">vinart_options_single_post_navigation_next_button</option>
+        <option translate="1">vinart_options_error_title</option>
+        <option translate="1">vinart_options_error_desc</option>
+        <option translate="1">vinart_options_error_button_text</option>
+    </options>
+
+</wpml-config>

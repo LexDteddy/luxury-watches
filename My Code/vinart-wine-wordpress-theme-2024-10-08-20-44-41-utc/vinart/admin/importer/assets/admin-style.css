@@ -1,0 +1,19 @@
+/*Admin Welcome Page*/
+.gg-admin-welcome-page {
+    margin: 10px 16px 0 15px;
+}
+
+.gg-admin-welcome-page .welcome-panel .welcome-panel-column {
+    width: 30%;
+    padding-right: 3%;
+}
+
+
+body .acf-fields > .acf-field.acf-field-message {
+    text-align: center;
+    background: #f1f1f1;
+}
+
+body .acf-fields > .acf-field.acf-field-message label {
+    font-size: 16px;
+}

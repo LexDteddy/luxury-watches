@@ -1,0 +1,7 @@
+<h4>Sign up to our newsletter</h4>
+<div class="newsletter-form-wrapper">
+<input type="email" name="EMAIL" placeholder="Stay up to date" required />
+<input type="submit" value="Submit" />
+</div>
+
+<em class="notice">By entering your email, you agree to our Terms of Service and Privacy Policy.</em>

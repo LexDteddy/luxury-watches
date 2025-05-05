@@ -1,0 +1,28 @@
+Version 1.5 (08.10.2024)
+------------------
+* Fixed: Outdated copies of some WooCommerce template files
+* Improved: Improved the Shop filter style
+
+Version 1.4 (11.09.2024)
+------------------
+* Fixed: Mobile menu not displaying correctly
+* Fixed: Updated WooCommerce template file as per latest WC update
+* Feature: Added Shop filters
+* Updated: OKThemes Toolkit plugin to v.1.3
+
+Version 1.3 (05.06.2024)
+------------------
+* Improved: Site animations
+* Updated: OKThemes Toolkit plugin to v.1.2
+
+Version 1.2 (29.05.2024)
+------------------
+* Improved: Demo content import
+
+Version 1.1 (29.05.2024)
+------------------
+* Fixed: FontAwesome loading error
+
+Version 1.0 
+------------------
+* Initial release

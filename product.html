@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Collection Watch | Luxury Watches</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="logo.png" alt="GFS Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="classic1.jpg" alt="Classic Collection Watch">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="classic1-side.jpg" alt="Side View">
+                        <img src="classic1-back.jpg" alt="Back View">
+                        <img src="classic1-detail.jpg" alt="Detail View">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Classic Collection Watch</h1>
+                    <p class="price">$2,500</p>
+                    <div class="product-description">
+                        <p>A timeless masterpiece that combines traditional craftsmanship with modern precision. This watch features a stainless steel case, sapphire crystal, and a hand-stitched leather strap.</p>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="specifications">
+                        <h3>Specifications</h3>
+                        <ul>
+                            <li><strong>Movement:</strong> Automatic</li>
+                            <li><strong>Case Material:</strong> Stainless Steel</li>
+                            <li><strong>Case Size:</strong> 42mm</li>
+                            <li><strong>Water Resistance:</strong> 50m</li>
+                            <li><strong>Power Reserve:</strong> 42 hours</li>
+                            <li><strong>Strap:</strong> Genuine Leather</li>
+                        </ul>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <div class="add-to-cart">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart()">Add to Cart</button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="features">
+                        <div class="feature">
+                            <h4>Free Shipping</h4>
+                            <p>Worldwide delivery with tracking</p>
+                        </div>
+                        <div class="feature">
+                            <h4>2-Year Warranty</h4>
+                            <p>International warranty coverage</p>
+                        </div>
+                        <div class="feature">
+                            <h4>Secure Payment</h4>
+                            <p>Multiple payment options available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>You May Also Like</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="classic2.jpg" alt="Related Watch">
+                    <div class="product-info">
+                        <h3>Classic Collection</h3>
+                        <p>Starting from $2,500</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="classic3.jpg" alt="Related Watch">
+                    <div class="product-info">
+                        <h3>Classic Collection</h3>
+                        <p>Starting from $2,500</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Collections</h3>
+                    <ul>
+                        <li><a href="#">Classic Collection</a></li>
+                        <li><a href="#">Sport Collection</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Craftsmanship</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 3rem;">&copy; 2024 Luxury Watches. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+
+        function addToCart() {
+            const quantity = document.getElementById('quantity').value;
+            // Update cart count in navigation
+            const cartLink = document.querySelector('.cart-link');
+            const currentCount = parseInt(cartLink.textContent.match(/\d+/)[0]);
+            cartLink.textContent = `Cart (${currentCount + parseInt(quantity)})`;
+            
+            // Show success message
+            alert('Added to cart successfully!');
+        }
+    </script>
+</body>
+</html> 

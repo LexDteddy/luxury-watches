@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Luxury Watches</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="logo.png" alt="GFS Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">Cart (0)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            
+            <div class="cart-grid">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="classic1.jpg" alt="Classic Collection Watch">
+                        </div>
+                        <div class="item-details">
+                            <h3>Classic Collection Watch</h3>
+                            <p>Reference: CC-2024</p>
+                            <div class="item-actions">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+                                </div>
+                                <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <p class="price">$2,500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$2,500</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$250</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$2,750</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                    <p class="secure-checkout">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L3 5V11.09C3 16.14 6.41 20.85 12 22C17.59 20.85 21 16.14 21 11.09V5L12 2ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17Z" fill="currentColor"/>
+                        </svg>
+                        Secure Checkout
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Collections</h3>
+                    <ul>
+                        <li><a href="#">Classic Collection</a></li>
+                        <li><a href="#">Sport Collection</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Craftsmanship</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 3rem;">&copy; 2024 Luxury Watches. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function increaseQuantity(button) {
+            const input = button.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+            updateTotal();
+        }
+
+        function decreaseQuantity(button) {
+            const input = button.nextElementSibling;
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+                updateTotal();
+            }
+        }
+
+        function removeItem(button) {
+            const cartItem = button.closest('.cart-item');
+            cartItem.remove();
+            updateTotal();
+        }
+
+        function updateTotal() {
+            // Update cart total logic here
+            const cartLink = document.querySelector('.cart-link');
+            const currentCount = parseInt(cartLink.textContent.match(/\d+/)[0]);
+            cartLink.textContent = `Cart (${currentCount})`;
+        }
+
+        function proceedToCheckout() {
+            // Redirect to checkout page
+            window.location.href = 'checkout.html';
+        }
+    </script>
+</body>
+</html> 
